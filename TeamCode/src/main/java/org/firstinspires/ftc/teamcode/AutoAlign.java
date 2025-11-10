@@ -8,9 +8,11 @@ import com.qualcomm.hardware.limelightvision.Limelight3A;
 import com.qualcomm.hardware.limelightvision.LLResult;
 import com.qualcomm.hardware.limelightvision.LLResultTypes.FiducialResult;
 import com.qualcomm.robotcore.util.Range;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
+
 
 import java.util.List;
-
+@Disabled
 @TeleOp(name="AprilTag Align TeleOp", group="TeleOp")
 public class AutoAlign extends LinearOpMode {
 
@@ -45,7 +47,7 @@ public class AutoAlign extends LinearOpMode {
         // Limelight setup
         limelight = hardwareMap.get(Limelight3A.class, LimelightConfig.LIMELIGHT_NAME);
         telemetry.setMsTransmissionInterval(11);
-        limelight.pipelineSwitch(5);
+        limelight.pipelineSwitch(4);
         limelight.setPollRateHz(100);
 
         waitForStart();

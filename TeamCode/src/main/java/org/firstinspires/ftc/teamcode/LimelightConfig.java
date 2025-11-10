@@ -16,7 +16,7 @@ public final class LimelightConfig {
 
     // --- Search & Aim Thresholds ---
     public static final double TURN_DEADZONE_DEGREES = 1.0;                  // Error threshold (degrees) within which we consider aligned
-    public static final double MAX_TURN_POWER        = 0.4;                  // Maximum turn power during alignment
+    public static final double MAX_TURN_POWER        = -0.7;                  // Maximum turn power during alignment
     public static final double SPIN_SEARCH_POWER     = 0.3;                  // Power used for spinning to search for target
 
     // --- Drive constants (for mecanum) ---

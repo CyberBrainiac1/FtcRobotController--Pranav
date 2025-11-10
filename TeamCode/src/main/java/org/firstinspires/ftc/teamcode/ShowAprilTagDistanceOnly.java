@@ -5,11 +5,12 @@ import com.qualcomm.hardware.limelightvision.LLResult;
 import com.qualcomm.hardware.limelightvision.LLResultTypes.FiducialResult;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 
 import org.firstinspires.ftc.teamcode.LimelightConfig;
 
 import java.util.List;
-
+@Disabled
 @TeleOp(name = "Show AprilTag Distance Only", group = "Vision")
 public class ShowAprilTagDistanceOnly extends LinearOpMode {
 
@@ -21,7 +22,7 @@ public class ShowAprilTagDistanceOnly extends LinearOpMode {
 
         telemetry.setMsTransmissionInterval(11);
         limelight.setPollRateHz(100);
-        limelight.pipelineSwitch(5);//pipeline 5
+        limelight.pipelineSwitch(4);//pipeline 5
         limelight.start();
 
         waitForStart();
